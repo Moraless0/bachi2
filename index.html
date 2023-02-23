@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Seguridad</title>
+<link rel="stylesheet" href="\bachi\css\bootstrap.min.css">
+<script type="text/javascript" src="\bachi\js\bootstrap.min.js"></script>
+<script type="text/javascript" src="\bachi\css\jquery-3.6.3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="\bachi\css\estilo.css">
+<script>
+function comprobarClave(){
+    clave1 = document.f1.clave1.value
+    clave2 = document.f1.clave2.value
+     
+
+    if (clave1 == "Henry" && clave2 == "Morales"){
+       alert("Los Datos Coinciden...\n Bienvenido");
+        var href =  "html/principal.html";
+        window.location=href;
+         }
+       
+    else{
+       alert("Error...\nIntentelo nuevamente.");
+        var href =  "index.html";
+        window.location=href;
+    };
+       
+}  
+</script>
+</head>
+<body>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+<h1>Iniciar Sesion</h1>
+<br>
+<form action="" name="f1">
+<center>
+<input class="col-form-label"  id="floatingInput" placeholder="User" name="clave1" size="30">
+<br><br>
+<input type="password" class="col-form-label" placeholder="Password" name="clave2" size="30">
+<br><br>
+<input type="button" value="Ingresar"type="submit" class="btn btn-warning" onClick="comprobarClave()">
+<br>
+<p>
+   <h3>Contrasena: Primer Apellido</h3>
+   <h3>Usuario: Primer Nombre </h3>
+   <h10>Primera Mayuscula</h10>
+</body>
+</html>
